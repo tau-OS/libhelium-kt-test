@@ -11,3 +11,5 @@ dependencyResolutionManagement {
         mavenLocal()
     }
 }
+
+include(":heApp")
