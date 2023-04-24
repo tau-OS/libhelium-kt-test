@@ -13,3 +13,4 @@ dependencyResolutionManagement {
 }
 
 include(":heApp")
+include(":dsl")

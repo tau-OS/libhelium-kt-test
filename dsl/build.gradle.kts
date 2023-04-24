@@ -13,7 +13,6 @@ kotlin {
                 implementation("org.gtkkn:gtk4:0.0.1-SNAPSHOT")
                 implementation("org.gtkkn:adwaita:0.0.1-SNAPSHOT")
                 implementation("org.gtkkn:libhelium:0.0.1-SNAPSHOT")
-                implementation(project(":dsl"))
             }
         }
     }
