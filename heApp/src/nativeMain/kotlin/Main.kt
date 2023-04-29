@@ -48,18 +48,23 @@ fun main() {
 
         val aboutAction = SimpleAction("action-about", null)
         aboutAction.connectActivate {
-            val aboutWindow = AboutWindow().apply {
-                title = "Abacus"
-                setAppId("com.fyralabs.Abacus")
-                setVersion("0.0.0")
-                setMoreInfoUrl("https://fyralabs.com")
-                setTranslateUrl("https://fyralabs.com")
-                setIssueUrl("https://fyralabs.com")
-                setDeveloperNames(listOf("Fyra Labs"), 1)
-                setCopyrightYear(2022)
-                setLicense(AboutWindowLicenses.GPLV3)
-                setColor(Colors.PURPLE)
-            }
+            val aboutWindow = AboutWindow(
+                parent = window,
+                appName = "Abacus",
+                appId = "com.fyralabs.Abacus",
+                version = "0.0.0",
+                icon = "com.fyralabs.Abacus",
+                translateUrl = "https://fyralabs.com",
+                issueUrl = "https://fyralabs.com",
+                moreInfoUrl = "https://fyralabs.com",
+                translators = listOf(""),
+                translatorsLength1 = 0,
+                developers = listOf("Fyra Labs"),
+                developersLength1 = 1,
+                copyrightYear = 2022,
+                license = AboutWindowLicenses.GPLV3,
+                color = Colors.PURPLE
+            )
             aboutWindow.present()
         }
         window.addAction(aboutAction)
